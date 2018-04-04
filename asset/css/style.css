@@ -1,4 +1,15 @@
-li {
+ul {
    color:#1EAF9C;
    background-color: #586160;  
+   display: flex;
+   justify-content: center; 
+}
+li{
+    margin: 10px;
+    
+}
+
+
+body{
+    background-color: slategray;
 }
