@@ -12,15 +12,17 @@ include "./functions/callPage.php";
 </head>
 <body>
     <div id="container">
-        <?php include "./includes/header.php"; ?>
+    <?php 
+    include "./includes/header.php";
+     ?>
 <main>
-<?php
-callPage();
-?>
+    <?php
+    callPage();
+    ?>
 </main>
-<?php
-include "./includes/footer.php";
-?>
+    <?php
+    include "./includes/footer.php";
+    ?>
 </body>
 </html>
 
