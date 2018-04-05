@@ -8,7 +8,7 @@ function callPage(){
             $page = "home";
         }
         
-        $page = "./includes/" . $page ."inc.php";
+        $page = "./includes/" . $page .".inc.php";
         
         $incFiles = glob("./includes/*.inc.php");
         
