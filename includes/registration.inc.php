@@ -1,8 +1,12 @@
-<h1>Registration</h1>
+<h1>Inscription</h1>
 <?php
-if (isset($_POST['frmRegistration.php'])) {
-    echo "Je viens du formulaire";
-    include "frmRegistration.php";
+if (isset($_POST['frmRegistration'])) {
+
+    $nom = $_POST['nom'] ?? "";
+    $prenom = $_POST['prenom'] ?? "";
+    $mail = $_POST['mail'] ?? "";
+    $mdp = $_POST['mdp'] ?? "";
+
 }
 
 else {
