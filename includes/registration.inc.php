@@ -7,6 +7,24 @@ if (isset($_POST['frmRegistration'])) {
     $mail = $_POST['mail'] ?? "";
     $mdp = $_POST['mdp'] ?? "";
 
+    $erreur = array();
+    if ($nom == "") array_push($erreur, "Veuillez saisir votre nom");
+    if ($prenom == "") array_push($erreur, "Veuillez saisir votre prenom");
+    if ($mail == "") array_push($erreur, "Veuillez saisir votre mail");
+    if ($mdp == "") array_push($erreur, "Veuillez saisir votre mot de passe");
+
+    if(count($erreur) > 0){
+        echo "Erreurs";
+
+
+    }
+
+    else{
+        echo "Pas d'erreurs";
+
+
+}
+
 }
 
 else {
