@@ -29,9 +29,27 @@ if (isset($_POST['frmRegistration'])) {
     }
 
     else{
-        echo "Pas d'erreurs";
+        $mdp = sha1($mdp);
+        $connection = mysqli_connect("localhost","root","","PHPDieppe");
+        $requete = "INSERT INTO T_USERS
+                    (USENAME, USEFIRSTNAME, USEMAIL, USEPASSWORD, ID_ROLE)
+                    VALUES ('$nom', '$prenom', 'mail', '$mdp', 3)";
+      
+        }
 
+        if (!$connection) {
+            die("Erreur MySQL" . mysqli_connect_errno() ." | " .mysqli_connect_error());
+        }
 
+        else {
+        if (mysqli_query($connection,$requete)) {
+            echo "Données Enregistrees";
+    }
+    else {
+        echo "Erreur";
+        include "frmRegistration.php";
+    }
+    mysqli_close($connection);
 }
 
 }
