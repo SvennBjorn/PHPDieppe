@@ -50,10 +50,10 @@ if (isset($_POST['frmRegistration'])) {
             $messageMail = "<h1> Merveilleux !! </h1>";
             $messageMail .= "<p>Vous êtes inscrit ! </p>";
             $messageMail .= "<p>Mais vous devez valider votre inscription.</p>";
-            $messageMail .= "<p><a href='http://localhost/PHPDieppe/index.php?page=mailValidation&amp;id=$id&amp;token=$token>";
+            $messageMail .= "<p><a href='http://localhost/PHPDieppe/index.php?page=mailValidation&amp;id=$id&amp;token=$token'>";
             $messageMail .= "Clique-moi grand fou!";
             $messageMail .= "</a></p>";
-
+die($messageMail);
             $headers = "From: manu@elysees.fr" . "\r\n" .
                      "Reply-to: doudou@matignon.com" . "\r\n" .
                      "X-Mailer: PHP/" .phpversion();
