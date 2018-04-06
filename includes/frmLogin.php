@@ -11,5 +11,5 @@
         <input type="reset" value="Effacer" />
         <input type="submit" value="Envoyer" />
     </div>
-        <input type="hidden" name="frmLogin" />
+    <input type="hidden" name="frmLogin" />
 </form>
