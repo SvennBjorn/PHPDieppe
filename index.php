@@ -1,6 +1,4 @@
 <?php
-session_start()
-echo session_id();
 include "./functions/callPage.php";
 ?>
 <!DOCTYPE html>
